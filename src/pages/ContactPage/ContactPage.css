@@ -3,12 +3,20 @@
     justify-content: space-around;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 150vh;
-    width: 100vw
+    /* height: 150vh; */
+    height: 100%;
+    /* width: 100vw; */
+    width: 100%;
 }
 
-.contact-main-div:first-child {
-
+@media (max-width: 500px) {
+    .contact-main-div {
+        justify-content: space-around;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 #manager-div {
